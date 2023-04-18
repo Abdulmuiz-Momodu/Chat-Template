@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+html, body, h1, h2, h3, h4, h5 {   
+    font-family: 'Bai Jamjuree', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+.heading {
+    font-weight: bold;
+    background-color: darkgray;
+    height: 6rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.join  {
+    height: 2rem;
+    width: 5rem;
+    font-weight: 800;
+    border: 1px solid green;
+    border-radius: .5rem;
+}
+
+.view {
+    height: 2rem;
+    width: 5rem;
+    border-radius: .5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1.5x;
+}
+
+.view:hover {
+    background-color: black;
+    color: white;
+}
+
+.suggested {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.suggestion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.suggest, .all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .2rem 1rem .2rem 1rem;
+}
+
+.suggest:hover, .all:hover {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.suggest img  {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: fit-content;
+  }
+  
+.tab button {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tablinks {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  float: left;
+  position: fixed;
+  right: 0;
+  width: 70%;
+  height: 100%;
+}
+
+header {
+    padding: 1rem;
+}
+
+.chat-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.leftchat {
+    background-color: hsl(206, 6%, 79%);
+    max-width: 10rem;
+    color: hsl(276, 55%, 52%);
+    padding: .5rem;
+    border-radius: 1rem 1rem 1rem .5rem;
+}                                                                  
+
+.rightchat {
+    color: hsl(271, 15%, 43%);
+    display: flex;
+    justify-content: end;
+}
+
+.three {
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
+}
+
+.three img {
+    height: 3rem;
+    border-radius: .7rem;
+}
+
+.four, .five {
+    border-radius: 1rem 1rem .3rem 1rem;
+    background-color: #fff;
+    padding: .5rem;
+    max-width: 9rem;
+    width: fit-content;
+}
+
+.dog {
+    background-image: linear-gradient(to left,hsl(264, 100%, 61%), hsl(293, 100%, 63%)) ;
+    color: hsl(276, 100%, 81%);
+    height: 2.5rem;
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem 1rem 1rem .5rem;
+}
+
+.dog:hover, label:hover, .dog input:hover {
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9rem;
+}
+
+.dolls {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}

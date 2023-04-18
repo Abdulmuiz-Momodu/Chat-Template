@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="w3-theme-l5">
+
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="/index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" id="home"><i class="fa fa-home"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-button w3-padding-large" title="Notifications">
+            <i class="fa fa-bell"></i>
+            <span class="w3-badge w3-right w3-small w3-green">3</span>
+          </button>
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width: 300px">
+            <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+            <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+            <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+          </div>
+        </div>
+        <a href="/pages/profile.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account" id="profile">
+          <img src="/images/mypher-wink.png" class="w3-circle" style="height: 23px; width: 23px" alt="mypher-wink"/>
+        </a>
+      </div>
+    </div>
+
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+      <a href="/pages/profile.html" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <div class="w3-section" style="padding-top: 2rem;">
+      <div class="tab w3-theme-d4">
+        <button class="tablinks w3-block" onclick="openCity(event, 'johndoe')">
+          <img src="/images/john.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          John Doe
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'angiejane')">
+          <img src="/images/angie.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Angie Jane
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'thomascook')">
+          <img src="/images/thomas.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Thomas Cook
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'loenardclair')">
+          <img src="/images/leonard.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Leonard Clair
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'jerrypalmer')">
+          <img src="/images/jerry.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Jerry Palmer
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'laurelgates')">
+          <img src="/images/laurel.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Laurel Gates
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'peterwebs')">
+          <img src="/images/webs.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Peter Webs
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'kevindunlop')">
+          <img src="/images/dunlop.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Kevin Dunlop
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'jeangrey')">
+          <img src="/images/grey.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Jean Grey
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'simonpusey')">
+          <img src="/images/pusey.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Simon Pusey
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'rosekremer')">
+          <img src="/images/rose.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Rose Kremer
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'angellawalter')">
+          <img src="/images/walter.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px"/>
+          Angella Walter
+        </button>
+        <button class="tablinks w3-block" onclick="openCity(event, 'marywhyte')">
+          <img src="/images/whyte.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px;"/>
+          Mary Whyte
+        </button>
+      </div>
+      
+      <div id="johndoe" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+          <img src="/images/john.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          John Doe
+        </div>
+        
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="angiejane" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+          <img src="/images/angie.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Angie Jane
+        </div>
+        
+        <div class="chat-body">
+          <div class="leftchat one">That sounds great. I’d be happy with that.</div>
+      
+          <div class="leftchat two">Could you send over some pictures of your dog, please?</div>
+          
+          <div class="three">
+            <img src="/images/dog-image-1.jpg" alt="dog-image-1">
+            <img src="/images/dog-image-2.jpg" alt="dog-image-2">
+            <img src="/images/dog-image-3.jpg" alt="dog-image-3">
+          </div>
+
+          <div class="rightchat">
+            <div class="four">Here are a few pictures. She’s a happy girl!</div>
+          </div>
+
+          <div class="rightchat">
+            <div class="five">Can you make it?</div>
+          </div>
+          
+          <div class="leftchat six">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+          
+          <div class="dog">
+            <input type="radio" id="seven" name="dog_walking">
+            <label for="seven">
+              <p>30 minute walk</p>
+              <div class="dolls">$29</div>
+            </label>  
+          </div>
+          
+          <div class="dog">
+            <input type="radio" id="eight" name="dog_walking">
+            <label for="eight">
+              <p>1 hour walk</p>
+              <div class="dolls">$49</div>
+            </label>
+          </div>  
+            
+          
+          <input type="text" id="message" name="message" placeholder="Type a message..." >
+          <input type="submit" value="submit" onclick="">
+        </div>
+      </div>
+      
+      <div id="thomascook" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+          <img src="/images/thomas.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Thomas Cook
+        </div>
+        
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <div id="loenardclair" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+          <img src="/images/leonard.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Leonard Clair
+        </div>
+        
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="jerrypalmer" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/jerry.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Jerry Palmer
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="laurelgates" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/laurel.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Laurel Gates
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="peterwebs" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/webs.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Peter Webs
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="kevindunlop" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/dunlop.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Kevin Dunlop
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="jeangrey" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/grey.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Jean Grey
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="simonpusey" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/pusey.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Simon Pusey
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="rosekremer" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/rose.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Rose Kremer
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="angellawalter" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/walter.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Angella Walter
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      
+      <div id="marywhyte" class="tabcontent  w3-theme-d2">
+        <div class="w3-theme-d4" style="display: flex; align-items: center; font-size: large; font-weight: 600; padding: 1.5rem;">
+          <a href="#" class="w3-bar-item"><img src="/images/previous.png" alt="previous" style="height: 1.2rem; padding-right: .5rem;"></a>
+
+          <img src="/images/whyte.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width: 30px; height: 30px;"/>
+          Mary Whyte
+          
+        </div>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+      function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    </script>
+</body>
+</html>
